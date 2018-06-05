@@ -1,0 +1,66 @@
+.main_nav_container
+  .container
+    .row
+      .col-lg-12.text-right
+        .logo_container
+          %a{:href => "#"}
+            Glitz
+            %span N Glam
+        %nav.navbar
+          %ul.navbar_menu
+            %li
+              %a{:href => "#"} home
+            %li
+              %a{:href => "#"} shop
+            %li
+              %a{:href => "#"} promotion
+            %li
+              %a{:href => "#"} pages
+            %li
+              %a{:href => "#"} blog
+            %li
+              %a{:href => "contact.html"} contact
+          %ul.navbar_user
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-search{"aria-hidden" => "true"}
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-user{"aria-hidden" => "true"}
+            %li.checkout
+              %a{:href => "#"}
+                %i.fa.fa-shopping-cart{"aria-hidden" => "true"}
+                %span#checkout_items.checkout_items 2
+          .hamburger_container
+            %i.fa.fa-bars{"aria-hidden" => "true"}
+.fs_menu_overlay
+.hamburger_menu
+  .hamburger_close
+    %i.fa.fa-times{"aria-hidden" => "true"}
+  .hamburger_menu_content.text-right
+    %ul.menu_top_nav
+      %li.menu_item.has-children
+        %a{:href => "#"}
+          My Account
+          %i.fa.fa-angle-down
+        %ul.menu_selection
+          %li
+            %a{:href => "#"}
+              %i.fa.fa-sign-in{"aria-hidden" => "true"}>
+              Sign In
+          %li
+            %a{:href => "#"}
+              %i.fa.fa-user-plus{"aria-hidden" => "true"}>
+              Register
+      %li.menu_item
+        %a{:href => "#"} home
+      %li.menu_item
+        %a{:href => "#"} shop
+      %li.menu_item
+        %a{:href => "#"} promotion
+      %li.menu_item
+        %a{:href => "#"} pages
+      %li.menu_item
+        %a{:href => "#"} blog
+      %li.menu_item
+        %a{:href => "#"} contact
