@@ -1,0 +1,15 @@
+%h3 Products
+.row
+  .col-md-2.sidebar
+    %p sidebar with filters
+  .col-md-10
+    .products-grid
+      - @products.each do |product|
+        .card.product
+          = image_tag product.images.first, width: 350, height: 350, class: 'card-img-top'
+          -# %img.card-img-top{src: "http://via.placeholder.com/350x350"}
+          .card-body
+            %h5.card-title= product.name
+            %h6.card-title= number_to_currency(product.price_in_cents.to_d/100, unit: '$')
+            = link_to 'Add to cart', '#', class: 'btn btn-primary'
+            %p.card-text= product.description

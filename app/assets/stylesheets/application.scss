@@ -485,3 +485,18 @@ Logo
 }
 
 @import "responsive";
+
+/********************************
+Product listing page
+********************************/
+.products-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 18rem;
+  margin: 5px;
+}
